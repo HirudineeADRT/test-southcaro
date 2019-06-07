@@ -1,0 +1,89 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "10d16b42-52ff-417b-8076-233466020d08": {
+        "id": "10d16b42-52ff-417b-8076-233466020d08",
+        "parent": null,
+        "name": "test-southcaro",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "7d88acef-f320-4fc9-a4db-1b2c6c278d10"
+        ],
+        "isRemovable": false,
+        "filePath": "test-southcaro"
+      },
+      "7d88acef-f320-4fc9-a4db-1b2c6c278d10": {
+        "id": "7d88acef-f320-4fc9-a4db-1b2c6c278d10",
+        "parent": "10d16b42-52ff-417b-8076-233466020d08",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test-southcaro/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "4bd562af-4d8f-4cb6-bdcf-6f69b4b40870": {
+        "id": "4bd562af-4d8f-4cb6-bdcf-6f69b4b40870",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.testSouthcarofunction = require(\"./test-southcaro/function.js\").handler;"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "10d16b42-52ff-417b-8076-233466020d08",
+    "openFiles": [
+      "7d88acef-f320-4fc9-a4db-1b2c6c278d10"
+    ],
+    "currentFileId": "7d88acef-f320-4fc9-a4db-1b2c6c278d10",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test-southcaro",
+    "projectDescription": "test",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1559894319280
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test-southcaro",
+      "url": "https://github.com/HirudineeADRT/test-southcaro"
+    }
+  }
+}
